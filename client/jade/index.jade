@@ -1,0 +1,27 @@
+doctype html
+html(ng-app="dnaApp")
+    head
+        meta(charset='utf8')
+        base(href='/')
+
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport',    content='width=device-width, initial-scale=1')
+
+        link(type="text/css", rel="stylesheet", href="static/css/master.css")
+        link(type="text/css", rel="stylesheet", href="static/css/font-awesome/css/font-awesome.min.css")
+
+        script(type="text/javascript", src="static/js/lib/angular.min.js")
+        script(type="text/javascript", src="static/js/lib/angular-route.min.js")        
+        //Helper JS Files    
+        script(type="text/javascript", src="static/js/helpers.js")
+            
+        //Angular App Config
+        script(type="text/javascript", src="static/js/app.js")
+            
+        //Controllers
+        script(type="text/javascript", src="static/js/controllers/preloginCtrl.js")
+
+        //Services    
+        script(type="text/javascript", src="static/js/services/UserService.js")
+    body
+        div(ng-view, style="height: 100%")
