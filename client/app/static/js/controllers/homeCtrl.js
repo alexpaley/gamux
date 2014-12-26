@@ -2,7 +2,7 @@
 
 var mod = angular.module('gamuxApp.controllers', []);
 
-mod.controller('preloginCtrl', ['$scope', '$location', '$anchorScroll', 'UserService', function($scope, $location, $anchorScroll, User) {
+mod.controller('homeCtrl', ['$scope', '$location', '$anchorScroll', 'UserService', function($scope, $location, $anchorScroll, User) {
     angular.extend($scope, {
         email: null,
         emailSent: false,

@@ -5,8 +5,8 @@ var gamuxApp = angular.module('gamuxApp', ['ngRoute', 'gamuxApp.controllers', 'g
 gamuxApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/static/partials/prelogin.html',
-            controller: 'preloginCtrl'
+            templateUrl: '/static/partials/home.html',
+            controller: 'homeCtrl'
         })
         .otherwise({
             redirectTo: '/'
