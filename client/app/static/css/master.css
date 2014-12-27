@@ -177,6 +177,14 @@ td,
 th {
   padding: 0;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 html,
 body {
   height: 100%;
@@ -191,7 +199,6 @@ a {
 .main-content {
   height: 100%;
   width: auto;
-  margin-left: 200px;
 }
 .ellipsis {
   text-overflow: ellipsis;
@@ -206,18 +213,195 @@ a {
 }
 #menu {
   position: fixed;
-  width: 200px;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
   height: 100%;
   background-color: #3f51b5;
 }
-.card {
+#menu:before,
+#menu:after {
+  content: '';
+  display: table;
+}
+#menu:after {
+  clear: both;
+}
+@media only screen and (max-width: 414px) {
+  #menu {
+    top: 0;
+    left: 0;
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 56px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  }
+  #menu:before,
+  #menu:after {
+    content: '';
+    display: table;
+  }
+  #menu:after {
+    clear: both;
+  }
+}
+.card-container {
+  *zoom: 1;
   float: left;
-  max-width: 33%;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 20%;
+  margin-right: 0%;
+}
+.card-container:before,
+.card-container:after {
+  content: '';
+  display: table;
+}
+.card-container:after {
+  clear: both;
+}
+@media only screen and (max-width: 414px) {
+  .card-container {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 56px;
+  }
+  .card-container:before,
+  .card-container:after {
+    content: '';
+    display: table;
+  }
+  .card-container:after {
+    clear: both;
+  }
+}
+.center-wrapper {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.center-wrapper:before,
+.center-wrapper:after {
+  content: '';
+  display: table;
+}
+.center-wrapper:after {
+  clear: both;
+}
+.card {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.3333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
   height: auto;
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #fafafa;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   border-radius: 2px;
+}
+.card:before,
+.card:after {
+  content: '';
+  display: table;
+}
+.card:after {
+  clear: both;
+}
+.card:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.card:nth-child(3n + 1) {
+  clear: both;
+}
+@media only screen and (max-width: 1024px) {
+  .card {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .card:before,
+  .card:after {
+    content: '';
+    display: table;
+  }
+  .card:after {
+    clear: both;
+  }
+  .card:nth-child(3n) {
+    margin-right: 3%;
+    float: left;
+  }
+  .card:nth-child(3n + 1) {
+    clear: none;
+  }
+  .card:nth-child(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .card:nth-child(2n + 1) {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card:first-child {
+    margin-left: auto;
+  }
+  .card:last-child {
+    margin-right: auto;
+  }
 }
 .card .image-container .image {
   width: 100%;
@@ -226,10 +410,6 @@ a {
 .card .info-container,
 .card .action-container {
   padding: 10px;
-}
-.card .info-container {
-  width: 100%;
-  height: auto;
 }
 .card .info-container .title,
 .card .info-container .hashtag-container,
@@ -242,7 +422,6 @@ a {
   font-weight: 400;
 }
 .card .info-container .hashtag-container {
-  width: 200px;
   font-size: 0.75em;
 }
 .card .info-container .hashtag-container .hashtag {
@@ -251,6 +430,15 @@ a {
 }
 .card .action-container {
   border-top: 1px solid #eceff1;
+  *zoom: 1;
+}
+.card .action-container:before,
+.card .action-container:after {
+  content: '';
+  display: table;
+}
+.card .action-container:after {
+  clear: both;
 }
 .card .action-container .action-wrapper {
   float: left;

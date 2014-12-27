@@ -16,7 +16,7 @@ gulp.task('stylus', function() {
 
 gulp.task('jade', function() {
     return es.concat(
-        gulp.src('./client/jade/partials/*.jade')
+        gulp.src('./client/jade/partials/**/*.jade')
             .pipe(jade())
             .pipe(gulp.dest('./client/app/static/partials/')),
 

@@ -1,14 +1,29 @@
 #menu {
   position: fixed;
-  width: 200px;
   height: 100%;
   background-color: #4b0082;
 }
+@media only screen and (max-width: 414px) {
+  #menu {
+    top: 0;
+    left: 0;
+    height: 56px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  }
+}
+@media only screen and (max-width: 414px) {
+  .card-container {
+    margin-top: 56px;
+  }
+}
+.center-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .card {
-  float: left;
-  max-width: 33%;
   height: auto;
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: cardBackground;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   border-radius: 2px;
@@ -21,10 +36,6 @@
 .card .action-container {
   padding: 10px;
 }
-.card .info-container {
-  width: 100%;
-  height: auto;
-}
 .card .info-container .title,
 .card .info-container .hashtag-container,
 .card .info-container .hashtag {
@@ -36,7 +47,6 @@
   font-weight: 400;
 }
 .card .info-container .hashtag-container {
-  width: 200px;
   font-size: 0.75em;
 }
 .card .info-container .hashtag-container .hashtag {

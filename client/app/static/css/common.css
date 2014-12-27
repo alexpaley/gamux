@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 html,
 body {
   height: 100%;
@@ -12,7 +20,6 @@ a {
 .main-content {
   height: 100%;
   width: auto;
-  margin-left: 200px;
 }
 .ellipsis {
   text-overflow: ellipsis;
