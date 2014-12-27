@@ -1,0 +1,70 @@
+#menu {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #4b0082;
+}
+.card {
+  float: left;
+  max-width: 33%;
+  height: auto;
+  margin: 15px;
+  background-color: cardBackground;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  border-radius: 2px;
+}
+.card .image-container .image {
+  width: 100%;
+  height: auto;
+}
+.card .info-container,
+.card .action-container {
+  padding: 10px;
+}
+.card .info-container {
+  width: 100%;
+  height: auto;
+}
+.card .info-container .title,
+.card .info-container .hashtag-container,
+.card .info-container .hashtag {
+  display: inline-block;
+  vertical-align: middle;
+}
+.card .info-container .title {
+  margin-right: 10px;
+  font-weight: 400;
+}
+.card .info-container .hashtag-container {
+  width: 200px;
+  font-size: 0.75em;
+}
+.card .info-container .hashtag-container .hashtag {
+  margin-right: 5px;
+  color: medGrey;
+}
+.card .action-container {
+  border-top: 1px solid lightGrey;
+}
+.card .action-container .action-wrapper {
+  float: left;
+}
+.card .action-container .action-wrapper .action {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.card .action-container .like-container {
+  float: right;
+}
+.card .action-container .like-container .number,
+.card .action-container .like-container .heart {
+  display: inline-block;
+  vertical-align: middle;
+}
+.card .action-container .like-container .heart {
+  font-size: 1.5em;
+}
+.card .action-container .like-container .number {
+  margin-left: 3px;
+}

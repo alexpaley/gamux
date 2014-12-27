@@ -1,3 +1,3 @@
-DNA Island Website
+Gamux Website
 ==================
 

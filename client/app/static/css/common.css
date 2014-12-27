@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  background-color: background;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: darkGrey;
+}
+a {
+  text-decoration: none;
+}
+.main-content {
+  height: 100%;
+  width: auto;
+  margin-left: 200px;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.pink {
+  color: #ffc0cb;
+}
+.dark-grey {
+  color: darkGrey;
+}
