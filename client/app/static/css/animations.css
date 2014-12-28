@@ -1,0 +1,40 @@
+@-moz-keyframes moveLeft {
+  0% {
+    right: 15px;
+    left: 0;
+  }
+  100% {
+    right: 0;
+    left: 15px;
+  }
+}
+@-webkit-keyframes moveLeft {
+  0% {
+    right: 15px;
+    left: 0;
+  }
+  100% {
+    right: 0;
+    left: 15px;
+  }
+}
+@-o-keyframes moveLeft {
+  0% {
+    right: 15px;
+    left: 0;
+  }
+  100% {
+    right: 0;
+    left: 15px;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    right: 15px;
+    left: 0;
+  }
+  100% {
+    right: 0;
+    left: 15px;
+  }
+}

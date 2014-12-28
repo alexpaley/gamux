@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd4c42e9-b3f8-4c68-8d91-c321ae795123" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/fonts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/master.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/mixins.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/css/variables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/partials/header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/partials/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/partials/menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/app/static/partials/prelogin.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/static/css/animations.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylus/animations.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/css/common.css" afterPath="$PROJECT_DIR$/client/app/static/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylus/common.styl" afterPath="$PROJECT_DIR$/client/stylus/common.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/css/components.css" afterPath="$PROJECT_DIR$/client/app/static/css/components.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylus/components.styl" afterPath="$PROJECT_DIR$/client/stylus/components.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/partials/home.html" afterPath="$PROJECT_DIR$/client/app/static/partials/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/jade/partials/home.jade" afterPath="$PROJECT_DIR$/client/jade/partials/home.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js" afterPath="$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/partials/layouts/homeLayout.html" afterPath="$PROJECT_DIR$/client/app/static/partials/layouts/homeLayout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/css/master.css" afterPath="$PROJECT_DIR$/client/app/static/css/master.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylus/master.styl" afterPath="$PROJECT_DIR$/client/stylus/master.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/static/partials/includes/menu.html" afterPath="$PROJECT_DIR$/client/app/static/partials/includes/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/jade/partials/includes/menu.jade" afterPath="$PROJECT_DIR$/client/jade/partials/includes/menu.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylus/variables.styl" afterPath="$PROJECT_DIR$/client/stylus/variables.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gamux.iws" />
@@ -47,7 +45,7 @@
           <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/jade/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="0" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
+                <state line="27" column="0" selection-start="1063" selection-end="1063" vertical-scroll-proportion="-16.2" vertical-offset="0" max-vertical-offset="495">
                   <folding />
                 </state>
               </provider>
@@ -62,60 +60,39 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="master.styl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylus/master.styl">
+          <file leaf-file-name="common.styl" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylus/common.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="195">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="master.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/app/static/css/master.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="399" column="1" selection-start="6093" selection-end="6093" vertical-scroll-proportion="0.0" vertical-offset="5687" max-vertical-offset="7110">
+                <state line="18" column="16" selection-start="378" selection-end="378" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="600">
                   <folding>
-                    <marker date="1419660171000" expanded="true" signature="2726:2739" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3108:3189" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="2912:3160" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="4222:4262" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3245:3254" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3922:3961" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="2934:3070" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3118:3162" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3202:3207" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3240:3256" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="3967:3983" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="5407:5584" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="5632:5658" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="5673:5708" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="6192:6236" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="6261:6287" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="4998:5051" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="6327:6336" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="6167:6169" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="5573:5662" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="6599:6605" placeholder="{...}" />
-                    <marker date="1419660171000" expanded="true" signature="6673:6696" placeholder="{...}" />
+                    <marker date="1419730650000" expanded="true" signature="448:517" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="common.styl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylus/common.styl">
+          <file leaf-file-name="home.jade" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/jade/partials/home.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="15" selection-start="394" selection-end="394" vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="570">
+                <state line="8" column="38" selection-start="238" selection-end="238" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="390">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.jade" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/jade/partials/home.jade">
+          <file leaf-file-name="components.styl" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylus/components.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="35" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.61728394" vertical-offset="0" max-vertical-offset="1425">
+                <state line="17" column="29" selection-start="390" selection-end="390" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="1620">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="menu.jade" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/jade/partials/includes/menu.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="21" selection-start="170" selection-end="170" vertical-scroll-proportion="0.062849164" vertical-offset="0" max-vertical-offset="716">
                   <folding />
                 </state>
               </provider>
@@ -125,10 +102,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="components.styl" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/stylus/components.styl">
+          <file leaf-file-name="homeCtrl.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="14" selection-start="282" selection-end="282" vertical-scroll-proportion="0.29871976" vertical-offset="0" max-vertical-offset="1155">
+                <state line="28" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5668016" vertical-offset="0" max-vertical-offset="795">
                   <folding />
                 </state>
               </provider>
@@ -138,6 +115,24 @@
             <entry file="file://$PROJECT_DIR$/client/jade/partials/layouts/homeLayout.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="3" column="4" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="150">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="variables.styl" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylus/variables.styl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="20" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="210">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="animations.styl" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylus/animations.styl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="12" selection-start="101" selection-end="101" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="195">
                   <folding />
                 </state>
               </provider>
@@ -167,18 +162,19 @@
         <option value="$PROJECT_DIR$/client/stylus/mixins.styl" />
         <option value="$PROJECT_DIR$/client/app/static/js/app.js" />
         <option value="$PROJECT_DIR$/client/jade/index.jade" />
-        <option value="$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js" />
-        <option value="$PROJECT_DIR$/client/jade/partials/includes/menu.jade" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/node_modules/rupture/index.js" />
-        <option value="$PROJECT_DIR$/client/stylus/variables.styl" />
         <option value="$PROJECT_DIR$/client/app/static/css/components.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/client/stylus/master.styl" />
         <option value="$PROJECT_DIR$/client/jade/partials/layouts/homeLayout.jade" />
-        <option value="$PROJECT_DIR$/client/stylus/common.styl" />
+        <option value="$PROJECT_DIR$/client/stylus/variables.styl" />
         <option value="$PROJECT_DIR$/client/jade/partials/home.jade" />
+        <option value="$PROJECT_DIR$/client/stylus/common.styl" />
+        <option value="$PROJECT_DIR$/client/stylus/master.styl" />
+        <option value="$PROJECT_DIR$/client/stylus/animations.styl" />
+        <option value="$PROJECT_DIR$/client/jade/partials/includes/menu.jade" />
         <option value="$PROJECT_DIR$/client/stylus/components.styl" />
+        <option value="$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js" />
       </list>
     </option>
   </component>
@@ -444,7 +440,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DNA Island Container/dnaisland-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -661,11 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/jade/partials/includes/menu.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.6666666" vertical-offset="0" max-vertical-offset="135">
@@ -674,13 +665,6 @@
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="278" selection-end="278" vertical-scroll-proportion="0.15107913" vertical-offset="0" max-vertical-offset="695">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/defaultController.js">
@@ -698,13 +682,6 @@
     <entry file="file://$PROJECT_DIR$/client/app/static/js/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="718">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/jade/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
           <folding />
         </state>
       </provider>
@@ -749,46 +726,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylus/master.styl">
+    <entry file="file://$PROJECT_DIR$/client/app/static/css/master.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="195">
-          <folding />
+        <state line="424" column="1" selection-start="6435" selection-end="6435" vertical-scroll-proportion="0.0" vertical-offset="6062" max-vertical-offset="7335">
+          <folding>
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419735376000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/static/css/master.css">
+    <entry file="file://$PROJECT_DIR$/client/jade/partials/layouts/homeLayout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="1" selection-start="6093" selection-end="6093" vertical-scroll-proportion="0.0" vertical-offset="5687" max-vertical-offset="7110">
-          <folding>
-            <marker date="1419660171000" expanded="true" signature="2726:2739" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3108:3189" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="2912:3160" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="4222:4262" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3245:3254" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3922:3961" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="2934:3070" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3118:3162" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3202:3207" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3240:3256" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="3967:3983" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="5407:5584" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="5632:5658" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="5673:5708" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="6192:6236" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="6261:6287" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="4998:5051" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="6327:6336" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="6167:6169" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="5573:5662" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="6599:6605" placeholder="{...}" />
-            <marker date="1419660171000" expanded="true" signature="6673:6696" placeholder="{...}" />
-          </folding>
+        <state line="3" column="4" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="150">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylus/variables.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="195">
+        <state line="3" column="20" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/jade/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1063" selection-end="1063" vertical-scroll-proportion="-16.2" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/static/css/animations.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylus/master.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.16997167" vertical-offset="0" max-vertical-offset="706">
           <folding />
         </state>
       </provider>
@@ -800,30 +797,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/jade/partials/layouts/homeLayout.jade">
+    <entry file="file://$PROJECT_DIR$/client/stylus/common.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="150">
-          <folding />
+        <state line="18" column="16" selection-start="378" selection-end="378" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="600">
+          <folding>
+            <marker date="1419730650000" expanded="true" signature="448:517" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylus/common.styl">
+    <entry file="file://$PROJECT_DIR$/client/stylus/animations.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="15" selection-start="394" selection-end="394" vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="570">
+        <state line="6" column="12" selection-start="101" selection-end="101" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/jade/partials/home.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.61728394" vertical-offset="0" max-vertical-offset="1425">
+        <state line="8" column="38" selection-start="238" selection-end="238" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylus/components.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="282" selection-end="282" vertical-scroll-proportion="0.29871976" vertical-offset="0" max-vertical-offset="1155">
+        <state line="17" column="29" selection-start="390" selection-end="390" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/jade/partials/includes/menu.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="170" selection-end="170" vertical-scroll-proportion="0.062849164" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/static/js/controllers/homeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5668016" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>

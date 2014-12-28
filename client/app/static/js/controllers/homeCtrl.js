@@ -6,20 +6,28 @@ mod.controller('homeCtrl', ['$scope', '$location', '$anchorScroll', 'UserService
     angular.extend($scope, {
         email: null,
         emailSent: false,
-        deskText: "Register",
-        mobileText: "Get Early Access"
+        cards: [],
+        isSearching: false
     });
     
+    $scope.isMobile = helpers.isMobileBrowser();
+
     $scope.scrollTo = function(id) {
         $location.hash(id);
         $anchorScroll();
     };
 
     $scope.hasEmail = function() {
-        return !!$scope.email;  
+        return !!$scope.email;
     };
 
-    $scope.isMobile = helpers.isMobileBrowser();
+    $scope.showSearch = function() {
+        $scope.isSearching = !$scope.isSearching;
+
+        var el = document.getElementById('search-field');
+        el.focus();
+
+    }
 
     $scope.submitEmail = function() {
         if(!$scope.hasEmail()) { 
