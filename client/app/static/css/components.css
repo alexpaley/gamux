@@ -17,6 +17,7 @@
   line-height: 80px;
   font-size: 1.5em;
   color: darkIndigo;
+  cursor: pointer;
 }
 @media only screen and (max-width: 414px) {
   #menu .hamburger,
@@ -125,4 +126,24 @@
 }
 .card .action-container .like-container .number {
   margin-left: 3px;
+}
+.action-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #ffc0cb;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  cursor: pointer;
+}
+.action-button .upload {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  color: #fff;
+  font-size: 2em;
 }

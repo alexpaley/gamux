@@ -1,7 +1,7 @@
 #menu
     i.fa.fa-bars.hamburger(ng-show="!isSearching")
     i.fa.fa-search.search(ng-click="showSearch()", ng-class="{'search-left': isSearching}")
-    .search-container
+    .search-container(ng-show="isSearching")
         form
             input(type="text", id="search-field")
             span.highlight

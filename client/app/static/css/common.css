@@ -17,6 +17,12 @@ body {
 a {
   text-decoration: none;
 }
+button {
+  border: 0;
+  outline: 0;
+  background: none;
+  border: none;
+}
 .main-content {
   height: 100%;
   width: auto;

@@ -1,6 +1,6 @@
 'use strict';
 
-var gamuxApp = angular.module('gamuxApp', ['ngRoute', 'gamuxApp.controllers', 'gamuxApp.services']);
+var gamuxApp = angular.module('gamuxApp', ['ngRoute', 'gamuxApp.controllers', 'gamuxApp.services', 'angularFileUpload']);
 
 gamuxApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider

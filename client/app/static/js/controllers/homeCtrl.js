@@ -2,46 +2,49 @@
 
 var mod = angular.module('gamuxApp.controllers', []);
 
-mod.controller('homeCtrl', ['$scope', '$location', '$anchorScroll', 'UserService', function($scope, $location, $anchorScroll, User) {
+mod.controller('homeCtrl', ['$scope', '$location', '$anchorScroll', '$timeout', 'UserService', '$upload', function($scope, $location, $anchorScroll, $timeout, User, $upload) {
     angular.extend($scope, {
         email: null,
         emailSent: false,
         cards: [],
-        isSearching: false
+        isSearching: false,
+        myFile: {},
+        myFiles: []
     });
-    
-    $scope.isMobile = helpers.isMobileBrowser();
 
+    //Helper Functions
+    $scope.isMobile = helpers.isMobileBrowser();
     $scope.scrollTo = function(id) {
         $location.hash(id);
         $anchorScroll();
     };
 
-    $scope.hasEmail = function() {
-        return !!$scope.email;
-    };
-
     $scope.showSearch = function() {
         $scope.isSearching = !$scope.isSearching;
 
-        var el = document.getElementById('search-field');
-        el.focus();
+        $timeout(function() {
+            var el = document.getElementById('search-field');
+            el.focus();
+        }, 100)
 
-    }
-
-    $scope.submitEmail = function() {
-        if(!$scope.hasEmail()) { 
-            return;
-        }
-        
-        User.submitEmail($scope.email).then(function(success) {
-            $scope.emailSent = true;
-            $scope.deskText = "Registered";
-            $scope.mobileText = "Registered";
-        }, function(error) {
-            console.log("Email failed to save");
-        });
     };
+
+    $scope.$watch('myFiles', function() {
+        for(var i = 0; i < $scope.myFiles.length; i++) {
+            var file     = $scope.myFiles[i];
+            $scope.upload = $upload.upload({
+                url: 'server/upload/url',
+                data: { myFile: $scope.myFile },
+                file: file
+            }).progress(function(evt) {
+                console.log('progress: ' + parseInt(100.0 * evt.loaded / evt.total) + '% file :'+ evt.config.file.name);
+            }).success(function(data, status, headers, config) {
+                // file is uploaded successfully
+                console.log('file ' + config.file.name + 'is uploaded successfully. Response: ' + data);
+            });
+        }
+    });
+
 
 }]);
 
